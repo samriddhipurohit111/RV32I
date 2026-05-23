@@ -1,7 +1,13 @@
 module riscv_multicycle_top (
 
     input wire clk,
-    input wire reset
+    input wire reset,
+    output wire [31:0] debug_pc,
+    output wire [31:0] debug_instruction,
+    output wire [31:0] debug_alu_result,
+    output wire [31:0] debug_writeback,
+    output wire [2:0]  debug_state
+
 
 );
 
